@@ -4,6 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Manzium</title>
+</head>
+<body>
 	<style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
@@ -67,9 +71,30 @@ span.psw {
   }
 }
 </style>
-	<title>Manzium</title>
-</head>
-<body>
+	<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
 	<p style="border: 200px; background-color: skyblue; height: 150px; text-align: center; font-size: 150px;">Delicious Bites</p>
 <p style="font-size: 40px;">Welcome to Delicious Bites We are a team of passionate foodies who love to share our love of food with others. We believe that food is more than just sustenance; it's a way to connect with people, celebrate cultures, and explore new experiences.
 <p style="font-size:40px;">Our website is a resource for all things food-related.</p>
